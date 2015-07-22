@@ -1,6 +1,5 @@
 # Weather-Now
--allow user to enter zip code to obtain the weather(temperature and humidity) info of that city.
-- preset 5 cities:
+- preset 5 cities with its humdity and temperature:
 1. Hong Kong
 2. Paris
 3. Tokyo
