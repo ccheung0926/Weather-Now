@@ -33,7 +33,7 @@ $(document).ready(function() {
           // +"<p>"+"temperature: "+ 
             // data.query.results.rss.channel.item.condition.temp+" F"+"</p>"
               $('#tokyo').append("<div class='accordion-panel'><p><center>"+"humidity: "+ data.query.results.rss.channel.atmosphere.humidity+"</p>"
-            	+"<p>"+"Temperature: "+data.query.results.rss.channel.item.condition.temp+"</p><p><button id='tokyoId' class='trigger-button' type='button'>"+"Forecast"
+            	+"<p>"+"Temperature: "+temperatureFontColor(data.query.results.rss.channel.item.condition.temp)+"</p><p><button id='tokyoId' class='trigger-button' type='button'>"+"Forecast"
             	+"</button><center></p></div>");
           	// var $content = $('#share-options').detach();
           	// console.log(data.query.results.rss.channel.item.forecast[0]);
@@ -50,7 +50,7 @@ $(document).ready(function() {
         	// $ul.append("<li id='hk'>"+"<button class='accordion-control'>"+"Hong Kong"+"</button><div class='accordion-panel'><p>"+"humidity: "+data.query.results.rss.channel.atmosphere.humidity+"</p>"
         		// +"<p>"+"Temperature: "+data.query.results.rss.channel.item.condition.temp+"</p></div></li>");
 			     $('#hk').append("<div class='accordion-panel'><p><center>"+"humidity: "+ data.query.results.rss.channel.atmosphere.humidity+"</p>"
-          	 +"<p>"+"Temperature: "+data.query.results.rss.channel.item.condition.temp+"</p><p><button id='hkId' class='trigger-button' type='button'>"+"Forecast"
+          	 +"<p>"+"Temperature: "+temperatureFontColor(data.query.results.rss.channel.item.condition.temp)+"</p><p><button id='hkId' class='trigger-button' type='button'>"+"Forecast"
           	 +"</button></center></p></div>");
           $(document).on('click','#hkId',function() {
             forecast[1] = "<li><center>"+"Weather Forecast"+"<p>"+"<strong>"+"Tomorrow: "+"</strong>"
@@ -65,7 +65,7 @@ $(document).ready(function() {
         	// $ul.append("<li id='paris'><button class='accordion-control'>"+"Paris"+"</button><div class='accordion-panel'><p>"+"humidity: "+data.query.results.rss.channel.atmosphere.humidity+"</p>"+"<p>"+"Temperature: "
         		// +data.query.results.rss.channel.item.condition.temp+"</p></div></li>");
 			   $('#paris').append("<div class='accordion-panel'><p><center>"+"humidity: "+ data.query.results.rss.channel.atmosphere.humidity+"</p>"
-              +"<p>"+"Temperature: "+data.query.results.rss.channel.item.condition.temp+"</p><p><button id='parisId' class='trigger-button' type='button'>"+"Forecast"
+              +"<p>"+"Temperature: "+temperatureFontColor(data.query.results.rss.channel.item.condition.temp)+"</p><p><button id='parisId' class='trigger-button' type='button'>"+"Forecast"
               +"</button></center></p></div>");
             $(document).on('click','#parisId',function() {
               forecast[2] = "<li><center>"+"Weather Forecast"+"<p>"+"<strong>"+"Tomorrow: "+"</strong>"
@@ -82,7 +82,7 @@ $(document).ready(function() {
 			// $('#mountainView').append("<div class='accordion-panel'><p>"+"humidity: "+ data.query.results.rss.channel.atmosphere.humidity+"</p>"
           	// +"<p>"+"Temperature: "+data.query.results.rss.channel.item.condition.temp+"</p></div>");
   			    $('#mountainView').append("<div class='accordion-panel'><p><center>"+"humidity: "+ data.query.results.rss.channel.atmosphere.humidity+"</p>"
-            	+"<p>"+"Temperature: "+data.query.results.rss.channel.item.condition.temp+"</p><p><button id='mountainViewId' class='trigger-button' type='button'>"+"Forecast"
+            	+"<p>"+"Temperature: "+temperatureFontColor(data.query.results.rss.channel.item.condition.temp)+"</p><p><button id='mountainViewId' class='trigger-button' type='button'>"+"Forecast"
             	+"</button></center></p></div>");
             $(document).on('click','#mountainViewId',function() {
                forecast[3]=("<li><center>"+"weather Forecast"+"<p>"+"<strong>"+"Tomorrow: "+"</strong>"
@@ -97,7 +97,7 @@ $(document).ready(function() {
         	// $ul.append("<li id='cairo'><button class='accordion-control'>"+"Cairo"+"</button><div class='accordion-panel'><p>"+"humidity: "+data.query.results.rss.channel.atmosphere.humidity+"</p>"+"<p>"+"Temperature: "
         		// +data.query.results.rss.channel.item.condition.temp+"</p></div></li>");
 			$('#cairo').append("<div class='accordion-panel'><p><center>"+"humidity: "+ data.query.results.rss.channel.atmosphere.humidity+"</p>"
-              +"<p>"+"Temperature: "+data.query.results.rss.channel.item.condition.temp+"</p><p><button id='cairoId' class='trigger-button' type='button'>"+"Forecast"
+              +"<p>"+"Temperature: "+temperatureFontColor(data.query.results.rss.channel.item.condition.temp)+"</p><p><button id='cairoId' class='trigger-button' type='button'>"+"Forecast"
               +"</button></center></p></div>");
         }
         $(document).on('click','#cairoId',function() {
